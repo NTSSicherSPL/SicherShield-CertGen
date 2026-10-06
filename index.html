@@ -428,7 +428,7 @@ select option{background:var(--navy3)}
     <h3>🔢 Zertifikatsnummern / Certificate Numbers &amp; Serien / Series</h3>
     <p style="font-size:12px;color:var(--gray);margin-bottom:1rem">Jeder Kurstyp / Each course type hat / has eine eigene Serie / own series + laufende Nummer / running number, z.B. / e.g. <strong style="color:var(--orange)">PSA-2025-0001</strong></p>
     <div class="sg2">
-      <div class="sblk"><div class="sblk-t">SS-01 · PSA Training</div>
+      <div class="sblk"><div class="sblk-t">SS-01 · PSA Inspection / Inspecție EIP</div>
         <div class="fg" style="margin-bottom:8px"><label>Prefix / Series</label><input type="text" id="sr-01" placeholder="PSA-2026"></div>
         <div class="fg"><label>Nächste Nr. / Next No.</label><input type="text" id="cnt-01" placeholder="1"></div>
       </div>
@@ -440,7 +440,7 @@ select option{background:var(--navy3)}
         <div class="fg" style="margin-bottom:8px"><label>Prefix / Series</label><input type="text" id="sr-05" placeholder="AS-2026"></div>
         <div class="fg"><label>Nächste Nr. / Next No.</label><input type="text" id="cnt-05" placeholder="1"></div>
       </div>
-      <div class="sblk"><div class="sblk-t">SS-10 · Erste Hilfe</div>
+      <div class="sblk"><div class="sblk-t">SS-10 · Erste-Hilfe-Ausbildung</div>
         <div class="fg" style="margin-bottom:8px"><label>Prefix / Series</label><input type="text" id="sr-10" placeholder="EH-2026"></div>
         <div class="fg"><label>Nächste Nr. / Next No.</label><input type="text" id="cnt-10" placeholder="1"></div>
       </div>
@@ -519,61 +519,82 @@ const C={
   "01": {
     "id": "01",
     "t": "cert",
-    "DE": {
-      "title": "Schulung zur Benutzung von PSA gegen Absturz",
-      "sub": "Persönliche Schutzausrüstung gegen Absturz (PSAgA)",
-      "norm": "DGUV 112-198/199",
-      "dur": "8 Std. / 1 Tag",
-      "valid": "1 Jahr",
+    "revision": "official-terminology-2026-10-06",
+    "RO": {
+      "title": "Formare ca persoană competentă pentru inspecția și evaluarea echipamentelor individuale de protecție împotriva căderilor, conform DGUV Grundsatz 312-906",
+      "sub": "Domeniu: EIP împotriva căderilor și echipamente de salvare (PSAgA/RA)",
+      "dur": "24 unități de 45 min.",
+      "valid": "Nespecificată",
       "topics": [
-        "Rechtliche Grundlagen gemäß DGUV 112-198/199",
-        "Auswahl und sachgerechte Benutzung von PSA gegen Absturz",
-        "Sichtkontrolle, Prüfung und Aussonderung",
-        "Rettungsplanung und Erste Hilfe",
-        "Praktische Übungen: Anlegen der Ausrüstung und Anschlagen"
+        "Cadrul normativ: DGUV Grundsatz 312-906 și EN 365:2004",
+        "Cerințe pentru EIP conform Regulamentului (UE) 2016/425",
+        "Tipuri de EIP împotriva căderilor și utilizarea conform destinației",
+        "Cunoașterea echipamentului și a standardelor tehnice aplicabile",
+        "Inspecția periodică și evaluarea stării echipamentului",
+        "Întreținerea EIP și păstrarea funcției de protecție",
+        "Exerciții practice de inspecție și evaluare a EIP"
       ],
-      "comp": "In der Benutzung von PSA gegen Absturz unterwiesene Person"
+      "comp": "Pregătire teoretică și practică pentru inspecția și evaluarea competentă a echipamentelor",
+      "norm": "DGUV Grundsatz 312-906 / EN 365:2004"
+    },
+    "DE": {
+      "title": "Qualifizierung zur sachkundigen Person für die Überprüfung und Beurteilung von persönlichen Absturzschutzausrüstungen nach DGUV Grundsatz 312-906",
+      "sub": "Teilbereich: PSA gegen Absturz und Rettungsausrüstungen (PSAgA/RA)",
+      "dur": "24 LE à 45 Min.",
+      "valid": "Nicht festgelegt",
+      "topics": [
+        "Normative Grundlagen: DGUV Grundsatz 312-906 und EN 365:2004",
+        "Anforderungen an PSA nach der EU-Verordnung 2016/425",
+        "Arten von PSA gegen Absturz und bestimmungsgemäße Verwendung",
+        "Ausrüstungskenntnisse und einschlägige technische Standards",
+        "Regelmäßige Überprüfung und Beurteilung des Ausrüstungszustands",
+        "Wartung von PSA und Erhaltung der Schutzfunktion",
+        "Praktische Übungen zur Überprüfung und Beurteilung von PSA"
+      ],
+      "comp": "Theoretische und praktische Schulung zur sachkundigen Überprüfung und Beurteilung",
+      "norm": "DGUV Grundsatz 312-906 / EN 365:2004"
     },
     "EN": {
-      "title": "Fall protection PPE training",
-      "sub": "Personal protective equipment against falls from height",
-      "norm": "DGUV 112-198/199",
-      "dur": "8 hours / 1 day",
-      "valid": "1 year",
+      "title": "Competent person qualification for the inspection and assessment of personal fall protection equipment under DGUV Principle 312-906",
+      "sub": "Scope: fall protection PPE and rescue equipment (PSAgA/RA)",
+      "dur": "24 units of 45 min.",
+      "valid": "Not specified",
       "topics": [
-        "Legal framework under DGUV 112-198/199",
-        "Selection and correct use of fall protection PPE",
-        "Visual inspection, testing and removal from service",
-        "Rescue planning and first aid",
-        "Practical exercises: fitting the equipment and connecting to anchors"
+        "Applicable standards: DGUV Principle 312-906 and EN 365:2004",
+        "PPE requirements under EU Regulation 2016/425",
+        "Types of fall protection PPE and their intended use",
+        "Equipment knowledge and relevant technical standards",
+        "Regular inspection and assessment of equipment condition",
+        "PPE maintenance and preservation of its protective function",
+        "Practical PPE inspection and assessment exercises"
       ],
-      "comp": "Person trained in the use of fall protection PPE"
+      "comp": "Theoretical and practical training in competent inspection and assessment",
+      "norm": "DGUV Grundsatz 312-906 / EN 365:2004"
     },
-    "RO": {
-      "title": "Instruire privind utilizarea EIP împotriva căderilor de la înălțime",
-      "sub": "Echipament individual de protecție împotriva căderilor de la înălțime",
-      "norm": "DGUV 112-198/199",
-      "dur": "8 ore / 1 zi",
-      "valid": "1 an",
-      "topics": [
-        "Cadrul legal conform DGUV 112-198/199",
-        "Selectarea și utilizarea corectă a EIP împotriva căderilor",
-        "Inspecție vizuală, verificare și scoatere din uz",
-        "Planificarea salvării și acordarea primului ajutor",
-        "Exerciții practice: echipare și conectare la punctele de ancorare"
-      ],
-      "comp": "Persoană instruită în utilizarea EIP împotriva căderilor"
+    "legacyRevisions": [
+      "ppe-inspection-v2"
+    ],
+    "revisedFields": [
+      "title",
+      "sub",
+      "norm",
+      "comp"
+    ],
+    "obsoleteDurations": {
+      "RO": "2-3 zile",
+      "DE": "2-3 Tage",
+      "EN": "2-3 days"
     }
   },
   "04": {
     "id": "04",
     "t": "cert",
     "DE": {
-      "title": "Schulung zur elektrotechnisch unterwiesenen Person (EuP)",
-      "sub": "Elektrotechnische Unterweisung gemäß DIN VDE 0105-100",
-      "norm": "DIN VDE 0105-100",
+      "title": "Elektrotechnische Unterweisung zur elektrotechnisch unterwiesenen Person (EuP)",
+      "sub": "Aufgabenbezogene Unterweisung durch eine Elektrofachkraft",
+      "norm": "DIN VDE 0105-100 / DIN VDE 1000-10",
       "dur": "8 Std. / 1 Tag",
-      "valid": "2 Jahre",
+      "valid": "1 Jahr",
       "topics": [
         "Grundlagen der Elektrotechnik und Schutzmaßnahmen",
         "Anforderungen gemäß DIN VDE 0105-100",
@@ -581,14 +602,14 @@ const C={
         "Sicheres Verhalten an und in der Nähe elektrischer Anlagen",
         "Erste Hilfe bei Stromunfällen"
       ],
-      "comp": "Elektrotechnisch unterwiesene Person (EuP)"
+      "comp": "Aufgabenbezogen elektrotechnisch unterwiesene Person (EuP)"
     },
     "EN": {
-      "title": "Electrically instructed person (EuP) training",
-      "sub": "Electrical safety instruction under DIN VDE 0105-100",
-      "norm": "DIN VDE 0105-100",
+      "title": "Electrical instruction for an electrically instructed person (EuP)",
+      "sub": "Task-specific instruction provided by an electrically skilled person",
+      "norm": "DIN VDE 0105-100 / DIN VDE 1000-10",
       "dur": "8 hours / 1 day",
-      "valid": "2 years",
+      "valid": "1 year",
       "topics": [
         "Fundamentals of electrical engineering and protective measures",
         "Requirements under DIN VDE 0105-100",
@@ -596,14 +617,14 @@ const C={
         "Safe behaviour at and near electrical installations",
         "First aid for electrical accidents"
       ],
-      "comp": "Electrically instructed person (EuP)"
+      "comp": "Electrically instructed person for specified tasks (EuP)"
     },
     "RO": {
-      "title": "Instruire în domeniul securității electrice (EuP)",
-      "sub": "Instruire pentru persoane instruite în domeniul electric, conform DIN VDE 0105-100",
-      "norm": "DIN VDE 0105-100",
+      "title": "Instruire electrotehnică pentru persoana instruită în domeniul electric (EuP)",
+      "sub": "Instruire pentru sarcini specifice, realizată de un specialist calificat în electrotehnică",
+      "norm": "DIN VDE 0105-100 / DIN VDE 1000-10",
       "dur": "8 ore / 1 zi",
-      "valid": "2 ani",
+      "valid": "1 an",
       "topics": [
         "Bazele electrotehnicii și măsuri de protecție",
         "Cerințe conform DIN VDE 0105-100",
@@ -611,16 +632,31 @@ const C={
         "Comportament sigur la instalațiile electrice și în apropierea acestora",
         "Primul ajutor în caz de accidente electrice"
       ],
-      "comp": "Persoană instruită în domeniul electric (EuP)"
+      "comp": "Persoană instruită în domeniul electric pentru sarcini specifice (EuP)"
+    },
+    "revision": "official-terminology-2026-10-06",
+    "legacyRevisions": [
+      ""
+    ],
+    "revisedFields": [
+      "title",
+      "sub",
+      "norm",
+      "comp"
+    ],
+    "obsoleteValidities": {
+      "RO": "2 ani",
+      "DE": "2 Jahre",
+      "EN": "2 years"
     }
   },
   "05": {
     "id": "05",
     "t": "cert",
     "DE": {
-      "title": "Arbeitsschutzunterweisung gemäß DGUV Vorschrift 1",
-      "sub": "Grundlegende Unterweisung im Arbeits- und Gesundheitsschutz",
-      "norm": "DGUV Vorschrift 1",
+      "title": "Unterweisung über Sicherheit und Gesundheitsschutz bei der Arbeit gemäß § 4 DGUV Vorschrift 1",
+      "sub": "Arbeitsplatz- und aufgabenbezogene Unterweisung nach § 12 Arbeitsschutzgesetz",
+      "norm": "DGUV Vorschrift 1 § 4 / ArbSchG § 12",
       "dur": "4 Std. / ½ Tag",
       "valid": "1 Jahr",
       "topics": [
@@ -632,12 +668,12 @@ const C={
         "Notfallmaßnahmen, Evakuierung und Brandschutz",
         "Betriebsspezifische Sicherheitsanforderungen"
       ],
-      "comp": "Gemäß DGUV Vorschrift 1 unterwiesene Person"
+      "comp": "In Sicherheit und Gesundheitsschutz bei der Arbeit unterwiesene Person"
     },
     "EN": {
-      "title": "Occupational safety training under DGUV Regulation 1",
-      "sub": "Basic instruction in occupational health and safety",
-      "norm": "DGUV Vorschrift 1",
+      "title": "Instruction in occupational safety and health under section 4 of DGUV Regulation 1",
+      "sub": "Workplace- and task-specific instruction under section 12 of the German Occupational Safety and Health Act",
+      "norm": "DGUV Vorschrift 1 § 4 / ArbSchG § 12",
       "dur": "4 hours / ½ day",
       "valid": "1 year",
       "topics": [
@@ -649,12 +685,12 @@ const C={
         "Emergency procedures, evacuation and fire safety",
         "Company-specific safety requirements"
       ],
-      "comp": "Person instructed in accordance with DGUV Regulation 1"
+      "comp": "Person instructed in occupational safety and health"
     },
     "RO": {
-      "title": "Instruire în securitatea muncii conform DGUV Vorschrift 1",
-      "sub": "Instruire de bază în securitate și sănătate în muncă",
-      "norm": "DGUV Vorschrift 1",
+      "title": "Instruire privind securitatea și sănătatea în muncă, conform § 4 DGUV Vorschrift 1",
+      "sub": "Instruire adaptată locului de muncă și sarcinilor, conform § 12 Arbeitsschutzgesetz",
+      "norm": "DGUV Vorschrift 1 § 4 / ArbSchG § 12",
       "dur": "4 ore / ½ zi",
       "valid": "1 an",
       "topics": [
@@ -666,17 +702,27 @@ const C={
         "Măsuri de urgență, evacuare și apărare împotriva incendiilor",
         "Cerințe de securitate specifice întreprinderii"
       ],
-      "comp": "Persoană instruită conform DGUV Vorschrift 1"
-    }
+      "comp": "Persoană instruită în securitate și sănătate în muncă"
+    },
+    "revision": "official-terminology-2026-10-06",
+    "legacyRevisions": [
+      ""
+    ],
+    "revisedFields": [
+      "title",
+      "sub",
+      "norm",
+      "comp"
+    ]
   },
   "10": {
     "id": "10",
     "t": "cert",
     "DE": {
-      "title": "Erste-Hilfe-Kurs",
-      "sub": "Erste Hilfe nach den Standards des Roten Kreuzes",
-      "norm": "Red Cross · DIN 13155 · BGV A1",
-      "dur": "9 Std. / 1 Tag",
+      "title": "Ausbildung in Erster Hilfe (Erste-Hilfe-Lehrgang) für betriebliche Ersthelfer",
+      "sub": "Erste-Hilfe-Ausbildung gemäß § 26 DGUV Vorschrift 1 und DGUV Grundsatz 304-001",
+      "norm": "DGUV Vorschrift 1 § 26 / DGUV Grundsatz 304-001",
+      "dur": "9 UE à 45 Min. / 1 Tag",
       "valid": "2 Jahre",
       "topics": [
         "Grundlagen der Ersten Hilfe und Rettungskette",
@@ -685,13 +731,13 @@ const C={
         "Erste Hilfe bei Schock und Bewusstlosigkeit",
         "Absicherung der Unfallstelle und Absetzen des Notrufs"
       ],
-      "comp": "In Erster Hilfe geschulte Person"
+      "comp": "In Erster Hilfe ausgebildete Person"
     },
     "EN": {
-      "title": "First aid course",
-      "sub": "First aid in accordance with Red Cross standards",
-      "norm": "Red Cross · DIN 13155 · BGV A1",
-      "dur": "9 hours / 1 day",
+      "title": "First aid training for workplace first aiders",
+      "sub": "First aid training under section 26 of DGUV Regulation 1 and DGUV Principle 304-001",
+      "norm": "DGUV Vorschrift 1 § 26 / DGUV Grundsatz 304-001",
+      "dur": "9 units of 45 min. / 1 day",
       "valid": "2 years",
       "topics": [
         "First aid fundamentals and the chain of survival",
@@ -703,10 +749,10 @@ const C={
       "comp": "Person trained in first aid"
     },
     "RO": {
-      "title": "Curs de prim ajutor",
-      "sub": "Prim ajutor conform standardelor Crucii Roșii",
-      "norm": "Red Cross · DIN 13155 · BGV A1",
-      "dur": "9 ore / 1 zi",
+      "title": "Formare în prim ajutor pentru lucrătorii desemnați să acorde primul ajutor",
+      "sub": "Formare în prim ajutor conform § 26 DGUV Vorschrift 1 și DGUV Grundsatz 304-001",
+      "norm": "DGUV Vorschrift 1 § 26 / DGUV Grundsatz 304-001",
+      "dur": "9 unități de 45 min. / 1 zi",
       "valid": "2 ani",
       "topics": [
         "Bazele primului ajutor și lanțul supraviețuirii",
@@ -716,14 +762,29 @@ const C={
         "Securizarea locului accidentului și apelarea serviciilor de urgență"
       ],
       "comp": "Persoană instruită în acordarea primului ajutor"
+    },
+    "revision": "official-terminology-2026-10-06",
+    "legacyRevisions": [
+      ""
+    ],
+    "revisedFields": [
+      "title",
+      "sub",
+      "norm",
+      "comp"
+    ],
+    "obsoleteDurations": {
+      "RO": "9 ore / 1 zi",
+      "DE": "9 Std. / 1 Tag",
+      "EN": "9 hours / 1 day"
     }
   },
   "11": {
     "id": "11",
     "t": "cert",
     "RO": {
-      "title": "Instruire inițială PSAgA și salvare",
-      "sub": "Utilizarea EIP împotriva căderilor și salvarea de la înălțime",
+      "title": "Instruire inițială cu exerciții practice privind utilizarea EIP împotriva căderilor și a echipamentelor de salvare",
+      "sub": "Utilizarea EIP împotriva căderilor și a echipamentelor individuale de protecție pentru salvare",
       "dur": "2 zile",
       "valid": "1 an",
       "topics": [
@@ -735,12 +796,12 @@ const C={
         "Planificarea intervenției și utilizarea echipamentului de salvare",
         "Exerciții practice de salvare și conduita în caz de urgență"
       ],
-      "comp": "Persoană instruită în utilizarea PSAgA și în salvare",
-      "norm": "DGUV Regel 112-198 / 112-199"
+      "comp": "Persoană instruită în utilizarea EIP împotriva căderilor și a echipamentelor de salvare",
+      "norm": "DGUV Regel 112-198 / DGUV Regel 112-199"
     },
     "DE": {
-      "title": "PSAgA-Erstunterweisung und Rettung",
-      "sub": "Benutzung von PSA gegen Absturz und Rettung aus der Höhe",
+      "title": "Erstunterweisung mit praktischen Übungen in der Benutzung von persönlichen Schutzausrüstungen gegen Absturz und Rettungsausrüstungen",
+      "sub": "Benutzung von PSAgA und persönlichen Absturzschutzausrüstungen zum Retten",
       "dur": "2 Tage",
       "valid": "1 Jahr",
       "topics": [
@@ -752,12 +813,12 @@ const C={
         "Rettungsplanung und Benutzung der Rettungsausrüstung",
         "Praktische Rettungsübungen und Verhalten im Notfall"
       ],
-      "comp": "In der Benutzung von PSAgA und in der Rettung unterwiesene Person",
-      "norm": "DGUV Regel 112-198 / 112-199"
+      "comp": "In der Benutzung von PSAgA und Rettungsausrüstungen unterwiesene Person",
+      "norm": "DGUV Regel 112-198 / DGUV Regel 112-199"
     },
     "EN": {
-      "title": "Initial fall protection PPE and rescue training",
-      "sub": "Use of fall protection PPE and rescue from height",
+      "title": "Initial instruction with practical exercises in the use of fall protection PPE and rescue equipment",
+      "sub": "Use of fall protection PPE and personal fall protection equipment for rescue",
       "dur": "2 days",
       "valid": "1 year",
       "topics": [
@@ -769,15 +830,25 @@ const C={
         "Rescue planning and use of rescue equipment",
         "Practical rescue exercises and emergency response"
       ],
-      "comp": "Person trained in the use of fall protection PPE and in rescue",
-      "norm": "DGUV Regel 112-198 / 112-199"
-    }
+      "comp": "Person instructed in the use of fall protection PPE and rescue equipment",
+      "norm": "DGUV Regel 112-198 / DGUV Regel 112-199"
+    },
+    "revision": "official-terminology-2026-10-06",
+    "legacyRevisions": [
+      ""
+    ],
+    "revisedFields": [
+      "title",
+      "sub",
+      "norm",
+      "comp"
+    ]
   },
   "12": {
     "id": "12",
     "t": "cert",
     "RO": {
-      "title": "Reinstruire anuală PSAgA și salvare",
+      "title": "Reinstruire anuală cu exerciții practice privind utilizarea EIP împotriva căderilor și a echipamentelor de salvare",
       "sub": "Actualizarea cunoștințelor și exerciții practice de utilizare și salvare",
       "dur": "1 zi",
       "valid": "1 an",
@@ -790,11 +861,11 @@ const C={
         "Exerciții practice cu echipamentul de salvare",
         "Analiza experiențelor din practică și prevenirea erorilor"
       ],
-      "comp": "Persoană reinstruită anual în utilizarea PSAgA și în salvare",
-      "norm": "DGUV Regel 112-198 / 112-199"
+      "comp": "Persoană reinstruită anual în utilizarea EIP împotriva căderilor și a echipamentelor de salvare",
+      "norm": "DGUV Regel 112-198 / DGUV Regel 112-199"
     },
     "DE": {
-      "title": "Jährliche PSAgA-Wiederholungsunterweisung und Rettung",
+      "title": "Jährliche Wiederholungsunterweisung mit praktischen Übungen in der Benutzung von persönlichen Schutzausrüstungen gegen Absturz und Rettungsausrüstungen",
       "sub": "Auffrischung der Kenntnisse und praktische Anwendungs- und Rettungsübungen",
       "dur": "1 Tag",
       "valid": "1 Jahr",
@@ -807,11 +878,11 @@ const C={
         "Praktische Übungen mit Rettungsausrüstung",
         "Auswertung praktischer Erfahrungen und Vermeidung von Fehlern"
       ],
-      "comp": "Jährlich in der Benutzung von PSAgA und in der Rettung unterwiesene Person",
-      "norm": "DGUV Regel 112-198 / 112-199"
+      "comp": "Jährlich in der Benutzung von PSAgA und Rettungsausrüstungen unterwiesene Person",
+      "norm": "DGUV Regel 112-198 / DGUV Regel 112-199"
     },
     "EN": {
-      "title": "Annual fall protection PPE and rescue refresher training",
+      "title": "Annual refresher instruction with practical exercises in the use of fall protection PPE and rescue equipment",
       "sub": "Knowledge update and practical PPE use and rescue exercises",
       "dur": "1 day",
       "valid": "1 year",
@@ -824,9 +895,19 @@ const C={
         "Practical exercises using rescue equipment",
         "Review of practical experience and prevention of errors"
       ],
-      "comp": "Person who has completed annual refresher training in fall protection PPE and rescue",
-      "norm": "DGUV Regel 112-198 / 112-199"
-    }
+      "comp": "Person who has completed annual refresher instruction in fall protection PPE and rescue equipment",
+      "norm": "DGUV Regel 112-198 / DGUV Regel 112-199"
+    },
+    "revision": "official-terminology-2026-10-06",
+    "legacyRevisions": [
+      ""
+    ],
+    "revisedFields": [
+      "title",
+      "sub",
+      "norm",
+      "comp"
+    ]
   }
 };
 
@@ -839,7 +920,14 @@ function applyCourseOverrides(){
     C[id]=JSON.parse(JSON.stringify(DEFAULT_COURSES[id]));
     for(const lang of ['RO','DE','EN']){
       const custom=S.sets.courseOverrides?.[id]?.[lang];if(!custom)continue;
-      for(const field of COURSE_FIELDS)if(typeof custom[field]==='string'&&custom[field].trim())C[id][lang][field]=custom[field];
+      const legacy=C[id].revision&&custom.revision!==C[id].revision;
+      if(legacy&&!C[id].legacyRevisions?.includes(custom.revision||''))continue;
+      for(const field of COURSE_FIELDS){
+        if(legacy&&C[id].revisedFields?.includes(field))continue;
+        if(legacy&&field==='dur'&&custom.dur===C[id].obsoleteDurations?.[lang])continue;
+        if(legacy&&field==='valid'&&custom.valid===C[id].obsoleteValidities?.[lang])continue;
+        if(typeof custom[field]==='string'&&custom[field].trim())C[id][lang][field]=custom[field];
+      }
       if(Array.isArray(custom.topics)&&custom.topics.length&&custom.topics.every(x=>typeof x==='string'&&x.trim()))C[id][lang].topics=[...custom.topics];
     }
   }
@@ -850,6 +938,7 @@ function captureCourseEditor(){
   for(const f of COURSE_FIELDS)d[f]=document.getElementById('ce-'+f).value.trim()||C[id][lang][f];
   d.topics=document.getElementById('ce-topics').value.split(/\r?\n/).map(x=>x.trim()).filter(Boolean);
   if(!d.topics.length)d.topics=[...C[id][lang].topics];
+  if(C[id].revision)d.revision=C[id].revision;
   S.sets.courseOverrides??={};S.sets.courseOverrides[id]??={};S.sets.courseOverrides[id][lang]=d;
   applyCourseOverrides();
 }
@@ -965,7 +1054,7 @@ const fmt=ds=>{if(!ds)return'—';const[y,m,d]=ds.split('-');return`${d}.${m}.${
 function validUntil(vs){
   if(!S.date)return'—';
   const dt=new Date(S.date);
-  const m=vs.match(/\d+/);dt.setFullYear(dt.getFullYear()+(m?parseInt(m[0]):1));
+  const m=String(vs||'').match(/\d+/);if(!m)return '—';dt.setFullYear(dt.getFullYear()+parseInt(m[0]));
   return fmt(`${dt.getFullYear()}-${String(dt.getMonth()+1).padStart(2,'0')}-${String(dt.getDate()).padStart(2,'0')}`);
 }
 function certNo(id){return`${S.ser[id]||'SS-'+id}-${String(S.cnt[id]||1).padStart(4,'0')}`}
